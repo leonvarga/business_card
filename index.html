@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Business card - Leon Varga</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="cv contact">
+		<meta name="author" content="Leon Amadeus Varga">
+		<link rel="stylesheet" href="assets/css/main.css">
+	</head>
+
+	<body>
+		<script>
+			function jump(h){
+				var element = document.getElementById(h);
+				var top = element.offsetTop; //Getting Y of target element
+				window.scrollTo(0, top);                        //Go there directly or some transition
+				element.style="text-decoration: underline;";
+			}		
+		</script>
+
+		<div class="viewport_area">
+			<div class="viewport_row">
+				<div class="sidebar">
+
+				</div>
+
+				<div class="mainbar">
+					<div id="namefield"> Leon Amadeus Varga </div>
+					<a onclick="jump('contact-section')" id="contactfield"> Contact </a>
+					<div class="maincontent">
+						<div class="sectionheader"> About Me </div>
+						<div class="image-with-text">
+							<img style="width: 30%;" src="assets/img/profil.png"/>
+							<span>"I am a recent PhD graduate in computer science, with expertise in computer vision and robotics, specifically in hyperspectral imaging. My motivation lies in continual learning and the automation of processes. Seeking research positions to explore new challenges and push the boundaries of computer science."</span>
+						</div>
+
+						<div class='between-sections'></div>
+						<div class="sectionheader"> Work Experience </div>
+						<br/>
+						<br/>
+
+						<div class="subsectionheader">June&nbsp;2020 - September&nbsp;2023</div>
+						<a href="https://uni-tuebingen.de/de/118829">University of Tübingen - Chair Cognitive Systems</a>, Tübingen, Germany as PhD student
+
+						<ul>
+							<li> Research on computer vision for robotics and hyperspectral imaging (PyTorch).</li>
+							<li> Designed and constructed hyperspectral laboratory systems.</li>
+							<li> Prototyped a drone-embedded object detection pipeline using Nvidia Xavier.</li>
+							<li> Established the maritime Search&Rescue benchmark <a href="https://seadronessee.cs.uni-tuebingen.de/">SeaDronesSee</a>. </li>
+							<li> Scientific reviewer for conferences and journals (e.g., WACV, IEEE TIP, and IJCNN).</li>
+							<li> Taught a lab course on mobile robots (ROS and C++).</li>
+							<li> Technical lead for GPU computing systems, GitLab, and drone-related projects.</li>
+						</ul>
+
+						<div class="subsectionheader">August&nbsp;2018 - March&nbsp;2020</div>
+						<a href="https://www.luxflux.de/de/my-front-page/">LuxFlux GmbH</a>, Reutlingen, Germany as Software Engineer (Student Trainee)
+
+						<ul>
+							<li> Driver developement for hyperspectral and GigE cameras (C++/C)</li>
+							<li> Prototyping on embedded platforms (Nvidia TX2)        </li>
+						</ul>
+						<div class="subsectionheader">October&nbsp;2012 - September&nbsp;2017</div>
+						<a href="https://www.fntsoftware.com/">FNT GmbH</a>, Ellwangen, Germany as Software Developer / Architect
+
+						<ul>
+							<li> Full-stack developer with focus on front end (Flash, Java, SQL)</li>
+							<li> Introducing a new technolgy stack (Typescript, Angular, JEE)        </li>
+						</ul>
+
+						<div class='between-sections'></div>
+						<div class="sectionheader"> Publications</div>
+						<br/>
+						<br/>
+
+						<div class="subsectionheader">Hyperspectral Imaging</div>
+						<div class="publication">
+							<img src="assets/img/paper/paper_hyveconv.png"/>
+							<div class="infos">
+								<span class="title">Wavelength-aware 2D Convolutions for Hyperspectral Imaging</span>
+								<span class="authors">Leon Amadeus Varga, Martin Messmer, Nuri Benbarka and Andreas Zell</span>
+								<span class="publisher">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2023</span>
+								<span class="links"><a href="https://openaccess.thecvf.com/content/WACV2023/html/Varga_Wavelength-Aware_2D_Convolutions_for_Hyperspectral_Imaging_WACV_2023_paper.html">[cvf]</a> <a href="https://github.com/cogsys-tuebingen/hyve_conv">[github]</a></span>
+							</div>
+						</div>
+
+						<br/>
+
+						<div class="publication">
+							<img style="width: 15%;" src="assets/img/paper/paper_ripeness.png"/>
+							<div class="infos">
+								<span class="title">Measuring the Ripeness of Fruit with Hyperspectral Imaging and Deep Learning</span>
+								<span class="authors">Leon Amadeus Varga, Jan Makowski and Andreas Zell</span>
+								<span class="publisher">IEEE International Joint Conference on Neural Networks (IJCNN) 2021</span>
+								<span class="links"><a href="https://ieeexplore.ieee.org/document/9533728">[ieee]</a> <a href="https://arxiv.org/abs/2104.09808">[arXiv]</a> <a href="https://github.com/cogsys-tuebingen/deephs_fruit">[github]</a></span>
+							</div>
+						</div>
+
+						<br/>
+
+						<div class="publication">
+							<img style="width: 15%;" src="assets/img/paper/paper_ssl.png"/>
+							<div class="infos">
+								<span class="title">Self-supervised Pretraining for Hyperspectral Classification of Fruit Ripeness</span>
+								<span class="authors">Leon Amadeus Varga*, Hannah Frank* and Andreas Zell</span>
+								<span class="publisher">Optical Characterization of Materials (OCM) 2023</span>
+								<span class="links"><a href="https://publikationen.bibliothek.kit.edu/1000155014">[kitOpen]</a> <a href="https://github.com/cogsys-tuebingen/deephs_fruit">[github]</a></span>
+							</div>
+						</div>
+
+						<br/>
+
+						<div class="subsectionheader">Unmanned Aerial Vehicles</div>
+						<div class="publication">
+							<img style="width: 15%;" src="assets/img/paper/paper_seadronessee.png"/>
+							<div class="infos">
+								<span class="title">SeaDronesSee: A Maritime Benchmark for Detecting Humans in Open Water</span>
+								<span class="authors">Leon Amadeus Varga*, Benjamin Kiefer*, Martin Messmer* and Andreas Zell</span>
+								<span class="publisher">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2022</span>
+								<span class="links"><a href="https://openaccess.thecvf.com/content/WACV2022/html/Varga_SeaDronesSee_A_Maritime_Benchmark_for_Detecting_Humans_in_Open_Water_WACV_2022_paper.html">[cvf]</a> <a href="https://seadronessee.cs.uni-tuebingen.de/">[website]</a></span>
+							</div>
+						</div>
+
+						<br/>
+
+						<div class="publication">
+							<img style="width: 15%;" src="assets/img/paper/paper_crow.png"/>
+							<div class="infos">
+								<span class="title">Tackling the Background Bias in Sparse Object Detection via Cropped Windows</span>
+								<span class="authors">Leon Amadeus Varga and Andreas Zell</span>
+								<span class="publisher">IEEE/CVF International Convference on Computer Vision (ICCV) Workshop Vision Meets Drones 2021</span>
+								<span class="links"><a href="https://openaccess.thecvf.com/content/ICCV2021W/VisDrone/html/Varga_Tackling_the_Background_Bias_in_Sparse_Object_Detection_via_Cropped_ICCVW_2021_paper.html">[cvf]</a> <a href="https://github.com/cogsys-tuebingen/crow_tiling">[github]</a></span>
+							</div>
+						</div>
+
+						<br/>
+
+						<div class="publication">
+							<img style="width: 15%;" src="assets/img/paper/paper_comprehensive.png"/>
+							<div class="infos">
+								<span class="title">Comprehensive Analysis of the Object Detection Pipeline on UAVs</span>
+								<span class="authors">Leon Amadeus Varga, Sebastian Koch and Andreas Zell</span>
+								<span class="publisher">MDPI Remote Sensing Journal</span>
+								<span class="links"><a href="https://www.mdpi.com/2072-4292/14/21/5508">[mdpi]</a> <a href="https://github.com/cogsys-tuebingen/cp_eval">[github]</a></span>
+							</div>
+						</div>
+						<span class="shared-contribution">*: shared contribution</span>
+
+						<div class='between-sections'></div>
+						<div class="sectionheader"> Used technologies </div>
+						<div class="technolgy-list">
+							<br/>
+							<br/>
+							<abbr class="hoverable" infos="C++"><img src="assets/img/tools/c++.png"/></abbr>
+							<abbr class="hoverable" infos="Python"><img src="assets/img/tools/python.png"/></abbr>
+							<abbr class="hoverable" infos="Java"><img src="assets/img/tools/java.png"/></abbr>
+							<br/>
+							<abbr class="hoverable" infos="PyTorch"><img src="assets/img/tools/pytorch.png"/></abbr>
+							<abbr class="hoverable" infos="PyTorch Lightning"><img src="assets/img/tools/pytorch_lightning.png"/></abbr>
+							<br/>
+							<abbr class="hoverable" infos="Ubuntu"><img src="assets/img/tools/ubuntu.svg"/></abbr>
+							<abbr class="hoverable" infos="Debian"><img src="assets/img/tools/debian.png"/></abbr>
+							<abbr class="hoverable" infos="Robot Operating System"><img src="assets/img/tools/ros.svg"/></abbr>
+							<br/>
+							<abbr class="hoverable" infos="Git"><img src="assets/img/tools/git.png"/></abbr>
+							<abbr class="hoverable" infos="NeoVim"><img src="assets/img/tools/neovim.png"/></abbr>
+
+							<span class='disclaimer'>All trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes.</span>
+
+						</div>
+
+						<div class='between-sections'></div>
+						<div class="sectionheader"> Education</div>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+
+						<div class="subsectionheader">June&nbsp;2020 - September&nbsp;2023</div>
+						<div class="education-step">
+							<span class="title">Ph.D. in Computer Science - University of Tübingen - Chair Cognitive Systems</span> <br/>
+							<span class="project"> Research topic: Computer Vision, Hyperspectral Imaging, Drones, Deep Learning</span> <br/>
+						</div>
+						<br/>
+
+						<div class="subsectionheader">October&nbsp;2017 - April&nbsp;2020</div>
+						<div class="education-step">
+							<span class="title">M.Sc. in Computer Science - University of Tübingen</span><br/>
+							<span class="project"> Master Thesis: 'Measure ripeness of fruits by using hyperspectral cameras and deep neuronal networks' </span> <br/>
+							<span class="project"> Research Project: 'Introduce sparse information processing in a dense grid by using REPRISE' </span> <br/>
+							<span class="grade"> Final grade: 1.3 </span>
+						</div>
+						<br/>
+
+						<div class="subsectionheader">October&nbsp;2012 - September&nbsp;2015</div>
+						<div class="education-step">
+							<span class="title"> B.Eng. in Technical Computer Science - University of Cooperative Education (DHBW&nbsp;Heidenheim)</span> <br/>
+							<span class="project"> Bachelor Thesis: 'Development of a query language for the retrieval of service management data' </span> <br/>
+							<span class="project"> Research Project: 'Optimizing network topologies using genetic algorithms' </span> <br/>
+							<span class="grade"> Final grade: 1.6 </span>
+						</div>
+						<br/>
+
+						<div class="subsectionheader">2003 - Juni&nbsp;2012</div>
+						<div class="education-step">
+							<span class="title"> Max-Planck-Gymnasium, Heidenheim </span><br/>
+							<span class="project"> School club: Schüler-Ingenieur-Akademie (SIA) and participating in Jugend Forscht </span> <br/>
+							<span class="project"> Tutoring in mathematics</span> <br/>
+							<span class="grade"> Final grade: good with prize in physics and computer science</span>
+						</div>
+						<br/>
+
+						<div class="subsectionheader">1999 - 2003</div>
+						<div class="education-step">
+							<span class="title"> Heckentalschule, Heidenheim </span>
+						</div>
+						<br/>
+
+
+						<div class="sectionheader" id="contact-section"> Contact </div>
+						LinkedIn: <a href="https://www.linkedin.com/in/leon-varga-ai/">leon-varga-ai</a> <br/>
+						GitHub: <a href="https://github.com/leonvarga">leonvarga</a> <br/>
+						E-Mail: leon(at)varga.host
+
+						<div class="advertisement">
+							You like this template? It is open-source! You can find it on my GitHub-page: <a href="https://github.com/leonvarga/business_card">https://github.com/leonvarga/business_card</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
